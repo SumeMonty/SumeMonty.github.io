@@ -32,6 +32,10 @@ if (window.matchMedia("(max-width:900px)").matches) {
   }
 }
 
+if (window.matchMedia("(max-width:395px)").matches){
+  document.querySelector('#nameH1').innerHTML = "Sumesh";
+}
+
 // Typed JS Animation Start
 
 var typed = new Typed('.type', {
@@ -46,71 +50,6 @@ var typed = new Typed('.type', {
   loop: true
 });
 // Typed JS Animation End
-
-// ------------NAVBAR BG CHANGE ON SCROLL START-----------------
-
-// window.addEventListener('scroll', function () {
-//     let navbar = this.document.querySelector('header');
-//     let windowPosition = window.scrollY > 80;
-//     if (windowPosition) {
-//         navbar.classList.add('scroll-active');
-//     } else {
-//         navbar.classList.remove('scroll-active');
-//     }
-// });
-
-//------------NAVBAR BG CHANGE ON SCROLL END-----------------
-
-// homebtn.addEventListener('mouseover', homebeforeeffect)
-// aboutbtn.addEventListener('mouseover', aboutbeforeeffect)
-// projectsbtn.addEventListener('mouseover', projectsbeforeeffect)
-// contactbtn.addEventListener('mouseover', contactbeforeeffect)
-
-
-// $(document).ready(function () {
-//   $(".homebtn").hover(
-//     function () {
-//       $(this).addClass("active");
-//     },
-//     function () {
-//       $(this).removeClass("active");
-//     }
-//   );
-// });
-// function homebeforeeffect() {
-//     if (!(homebtn.classList.contains('active'))) {
-//         homebtn.classList.add('active');
-//     }
-//     else {
-//         homebtn.classList.remove('active');
-//     }
-// }
-// function aboutbeforeeffect() {
-//     if (!(aboutbtn.classList.contains('active'))) {
-//         aboutbtn.classList.add('active');
-//     }
-//     else {
-//         aboutbtn.classList.remove('active');
-//     }
-// }
-// function projectsbeforeeffect() {
-//     if (!(projectsbtn.classList.contains('active'))) {
-//         projectsbtn.classList.add('active');
-//     }
-//     else {
-//         projectsbtn.classList.remove('active');
-//     }
-//     projectsbtn.classList.remove('active');
-// }
-// function contactbeforeeffect() {
-//     if (!(contactbtn.classList.contains('active'))) {
-//         contactbtn.classList.add('active');
-//     }
-//     else {
-//         contactbtn.classList.remove('active');
-//     }
-// }
-
 
 
 
@@ -148,7 +87,7 @@ toggle.addEventListener('change', function () {
 
 
 window.addEventListener('scroll', function () {
-  let navbar = this.document.querySelector('header');
+  let navbar = this.document.querySelector('.navbar');
   let windowPosition = window.scrollY ;
   if (windowPosition > 80) {
     topbtn.style.display = 'block';

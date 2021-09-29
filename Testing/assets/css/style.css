@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Bad+Script:regular);
+@import url(https://fonts.googleapis.com/css?family=Allura:regular);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bad Script';
+}
+*::selection {
+  background: #2a57e0;
+}
+
+:root {
+  --light-nav-back: #fff;
+  --light-nav-text: #000;
+  --light-nav-hover: #00ffff;
+}
+
+.light {
+  --nav-back:var(--light-nav-back);
+  --nav-text:var(--light-nav-text);
+  --nav-hover:var(--light-nav-hover);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  font-family: 'Allura';
+} */
+
+.navbar {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 30;
+  height: 10%;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--nav-text);
+  /* background: transparent; */
+  background: var(--nav-back);
+}
+.name {
+  font-size: 20px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.navbar .mainMenu {
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  right: 10px;
+}
+
+.navbar .mainMenu li a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--nav-text);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* display: none; */
+
+}
+
+.navbar .mainMenu li a:hover {
+  background: var(--nav-hover);
+}
+
+.navbar .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .mainMenu .closeMenu, .socialIcons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.socialIcons .fa-github:hover {
+    color: #e1419e;
+}
+.socialIcons .fa-linkedin:hover {
+  color: #2a57e0;
+}
+
+@media(max-width:900px){
+    .navbar .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 0.3s ease;
+        display: none;
+    }
+
+    .Home {
+      background: url('../img/bg2.jpg');
+    }
+    .navbar .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navbar .openMenu {
+        display: block;
+    }
+
+    .navbar .mainMenu li a:hover {
+        background: none;
+        color: #ff8800;
+        font-size: 1.6rem;
+    }
+    .socialIcons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.Home {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  background: url('../img/bg3.jpg');
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:900px) {
+  .Home {
+    background: url('../llpaperaccess.com/full/1385556.jpg');
+  }
+}
+.text {
+  height: 250px;
+  width: 600px;
+  text-align: center;
+}
+.text h3 {
+  font-size: 30px;
+}
+.text h2 {  
+  font-size: 40px;
+  color: #000;
+}
+
+.text h2 span {
+  color: #dd7758;
+}
+
+.About {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  background: #3edf4b;
+}
+.Projects {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  background: #8864e9;
+}
+.Contact {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  background: #c7c947;
+}

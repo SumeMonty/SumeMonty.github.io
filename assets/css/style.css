@@ -26,7 +26,7 @@
   --light-about-back: #f8edeb;
   --light-projects-back: #f8edeb;
   --light-contact-back: #f8edeb;
-  --light-home-span: #5e80e6;
+  --light-home-span: #28cab5;
   /* --light-nav-hover: #00ffff; */
   --light-body-back: #ffffff;
   --light-bg-about-div: #fff;
@@ -36,8 +36,8 @@
   --dark-about-back: #343a40;
   --dark-projects-back: #343a40;
   --dark-contact-back: #343a40;
-  --dark-home-text: #fff;
-  --dark-home-span: #5e80e6;
+  --dark-home-text: #000;
+  --dark-home-span: #28cab5;
   --dark-body-back: #000;
   --dark-bg-about-div: #6c757d;
   --dark-body-text: #fff;

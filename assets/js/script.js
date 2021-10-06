@@ -72,7 +72,7 @@ toggle.addEventListener('change', function () {
     sun.style.display = 'block';
     togglediv.style.boxShadow = '4px 0 1em 4px rgba(255, 255, 255, 0.5)';
     topbtn.style.boxShadow = '0 0 1em 5px rgba(255, 255, 255, 0.5)';
-    gifImg.src = "assets/img/programmer-darkbg.gif"
+    // gifImg.src = "assets/img/programmer-darkbg.gif"
   }
   else {
     body.classList.remove('dark');
@@ -81,7 +81,7 @@ toggle.addEventListener('change', function () {
     sun.style.display = 'none';
     togglediv.style.boxShadow = '4px 0 1em 4px rgba(0, 0, 0, 0.5)';
     topbtn.style.boxShadow = '0 0 1em 5px rgba(0, 0, 0, 0.5)';
-    gifImg.src = "assets/img/programmer-lightbg.gif"
+    // gifImg.src = "assets/img/programmer-lightbg.gif"
   }
 })
 

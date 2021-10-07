@@ -27,6 +27,8 @@
   --light-body-back: #ffffff;
   --light-bg-about-div: #fff;
   --light-body-text: #000;
+  --light-bg-toggle: #fff;
+  --light-btn-toggle: #000;
 
   --dark-nav-back: rgba(000, 000, 000, 1);
   --dark-nav-text: #fff;
@@ -38,6 +40,8 @@
   --dark-body-back: #000;
   --dark-bg-about-div: #6c757d;
   --dark-body-text: #fff;
+  --dark-bg-toggle: #000;
+  --dark-btn-toggle: #fff;
 }
 
 .light {
@@ -52,6 +56,8 @@
   /* --nav-hover: var(--light-nav-hover); */
   --home-text: var(--light-home-text);
   --home-span: var(--light-home-span);
+  --bg-toggle: var(--light-bg-toggle);
+  --btn-toggle: var(--light-btn-toggle);
 }
 .dark {
   --nav-back: var(--dark-nav-back);
@@ -65,6 +71,8 @@
   /* --nav-hover: var(--dark-nav-hover); */
  --home-text: var( --dark-home-text);
  --home-span: var( --dark-home-span);
+ --bg-toggle: var(--dark-bg-toggle);
+ --btn-toggle: var(--dark-btn-toggle);
 }
 body {
   font-family: "Roboto";
@@ -390,12 +398,12 @@ background: linear-gradient( #9198e5, #e66465);
 .dark-light-toggle {
 	width: 150px;
 	height: 50px;
-	border-radius: 35px;
+	border-radius: 25px;
 	background: var(--bg-toggle);
 	color: var(--nav-text);
 	position: fixed;
-	bottom: 30px;
-	left: -100px;
+	bottom: 40px;
+	left: -95px;
 	box-shadow: 4px 4px 1em rgba(0, 0, 0, 0.5);
 	display: flex;
 	justify-content: flex-end;
@@ -413,18 +421,18 @@ background: linear-gradient( #9198e5, #e66465);
 }
 
 .dark-light-toggle label {
-	width: 50px;
-	height: 50px;
-	font-size: 30px;
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	outline: none;
 	border: none;
 	border-radius: 50%;
-	margin-right: 5px;
-	background-color: var(--bg-toggle);
-	color: var(--nav-text);
+	margin-right: 8px;
+	background-color: var(--btn-toggle);
+	color: var(--nav-back);
 	cursor: pointer;
 	transition: all .5s ease;
 }

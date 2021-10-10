@@ -81,6 +81,7 @@
 
 body {
   font-family: "Roboto";
+  overflow-x: hidden;
 }
 
 /* width */

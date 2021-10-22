@@ -32,7 +32,7 @@ if (window.matchMedia("(max-width:900px)").matches) {
   }
 }
 
-if (window.matchMedia("(max-width:395px)").matches){
+if (window.matchMedia("(max-width:395px)").matches) {
   document.querySelector('#nameH1').innerHTML = "Sumesh";
 }
 
@@ -88,7 +88,7 @@ toggle.addEventListener('change', function () {
 
 window.addEventListener('scroll', function () {
   let navbar = this.document.querySelector('.navbar');
-  let windowPosition = window.scrollY ;
+  let windowPosition = window.scrollY;
   if (windowPosition > 80) {
     topbtn.style.display = 'block';
     navbar.classList.add('scroll-active');

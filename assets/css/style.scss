@@ -20,15 +20,18 @@
     --light-nav-text: #000;
     --light-home-text: #000;
     --light-about-back: #f8edeb;
-    --light-projects-back: #f8edeb;
+    --light-projects-back: #f0efeb;
     --light-contact-back: #f8edeb;
     --light-home-span: #28cab5;
     /* --light-nav-hover: #00ffff; */
     --light-body-back: #ffffff;
     --light-bg-about-div: #fff;
+    --light-bg-contact-div: #fff;
+    --light-shadow: 4px 4px 15px rgba(0,0,0, .5);
     --light-body-text: #000;
     --light-bg-toggle: #fff;
     --light-btn-toggle: #000;
+    
     --dark-nav-back: rgba(000, 000, 000, 1);
     --dark-nav-text: #fff;
     --dark-about-back: #343a40;
@@ -38,6 +41,8 @@
     --dark-home-span: #28cab5;
     --dark-body-back: #000;
     --dark-bg-about-div: #6c757d;
+    --dark-bg-contact-div: #252525;
+    --dark-shadow: 4px 4px 15px rgba(255, 255, 255, 0.5);
     --dark-body-text: #fff;
     --dark-bg-toggle: #000;
     --dark-btn-toggle: #fff;
@@ -50,6 +55,8 @@
     --projects-back: var(--light-projects-back);
     --contact-back: var(--light-contact-back);
     --bg-about-div: var(--light-bg-about-div);
+    --bg-contact-div:var(--light-bg-contact-div);
+    --shadow:var(--light-shadow);
     --body-back: var(--light-body-back);
     --body-text: var(--light-body-text);
     /* --nav-hover: var(--light-nav-hover); */
@@ -66,6 +73,8 @@
     --projects-back: var(--dark-projects-back);
     --contact-back: var(--dark-contact-back);
     --bg-about-div: var(--dark-bg-about-div);
+    --bg-contact-div:var(--dark-bg-contact-div);
+    --shadow:var(--dark-shadow);
     --body-back: var(--dark-body-back);
     --body-text: var(--dark-body-text);
     /* --nav-hover: var(--dark-nav-hover); */
@@ -77,7 +86,7 @@
 
 body {
     font-family: "Roboto";
-    overflow-x: hidden;
+    // overflow-x:hidden;
 }
 
 
@@ -112,12 +121,13 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 
 .navbar {
     top: 0;
     z-index: 10;
-    height: 10%;
+    height: 9vh;
     width: 100vw;
     position: sticky;
     display: flex;
@@ -422,9 +432,84 @@ html {
     width: 100%;
     z-index: 0;
     background: var(--contact-back);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
+.contact-form-div {
+    width: 80%;
+    height: 85%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: var(--bg-contact-div);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.fname-lname {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#fname, #lname {
+    width: 45%;
+    font-size: 30px;
+    border-radius: 32px;
+    padding: 5px 15px;
+    // font-family: 'Marck Script';
+    font-weight:900;
+}
+
+#email {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 30px;
+    border-radius: 32px;
+    padding: 5px 15px;
+    // font-family: 'Marck Script';
+    font-weight:900;
+}
+
+#number {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 30px;
+    border-radius: 32px;
+    padding: 5px 15px;
+    // font-family: 'Marck Script';
+    font-weight:900;
+}
+
+#message {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    // font-family: 'Marck Script';
+    font-weight:900;
+}
+
+#cont-send {
+    padding: 10px 30px;
+    font-size: 30px;
+    border-radius: 26px;
+    // font-family: 'Marck Script';
+    font-weight:900;
+    border: none;
+    background: linear-gradient(
+43deg
+, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    transition: all .3s ease;
+    margin: 10px 0;
+    color: #fff;
+}
 /* *******************Contact End****************** */
 
 

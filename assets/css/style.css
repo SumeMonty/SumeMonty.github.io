@@ -85,7 +85,9 @@
   --bg-toggle: var(--dark-bg-toggle);
   --btn-toggle: var(--dark-btn-toggle);
 }
-
+html{
+  overflow-x:hidden;
+}
 body {
   font-family: "bad script";
   overflow-y: visible;

@@ -797,7 +797,7 @@ ul li:hover a span {
 }
 
 .fname-lname {
-  width: 92.5%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,9 +810,10 @@ ul li:hover a span {
 
 #fname,
 #lname {
-  width: 45%;
+  width: 90%;
   font-size: 30px;
   border-radius: 3px;
+  margin: auto;
   padding: 5px 15px;
   font-family: 'Shadows Into Light';
   font-weight: 900;
@@ -856,7 +857,7 @@ ul li:hover a span {
   font-family: 'Shadows Into Light';
   font-weight: 900;
   border: none;
-  background: linear-gradient(43deg, #090979 0%, #00d4ff 100%);
+  background: linear-gradient(43deg, #09795d 0%, #00d4ff 100%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 10px 0;
@@ -1083,6 +1084,14 @@ ul li:hover a span {
     margin-right: 25px;
   }
   /*About*/
+  /*Contact*/
+  .fname-lname {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /*Contact*/
 }
 
 @media screen and (max-width: 460px) {

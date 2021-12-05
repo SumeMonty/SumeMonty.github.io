@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bad+Script:regular);
 @import url(https://fonts.googleapis.com/css?family=Allura:regular);
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Shadows+Into+Light&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -84,12 +84,12 @@
     --bg-toggle: var(--dark-bg-toggle);
     --btn-toggle: var(--dark-btn-toggle);
 }
-html{
-  overflow-x:hidden;
+html {
+    overflow-x: hidden;
 }
 body {
     font-family: "bad script";
-    overflow-y:visible;
+    overflow-y: visible;
 }
 
 /* width */
@@ -132,7 +132,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
     padding: 0 25px;
@@ -195,61 +195,61 @@ html {
 }
 
 /**/
-nav{
+nav {
     position: fixed;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     width: 50px;
     margin-top: 120px;
     transition: all 0.3s linear;
-    box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
-  }
-  nav li{
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+nav li {
     height: 60px;
-    position:relative;
-  }
-  nav li a{
+    position: relative;
+}
+nav li a {
     color: white;
     display: block;
     height: 100%;
     width: 100%;
     line-height: 60px;
-    padding-left:25%;
-    border-bottom: 1px solid rgba(0,0,0,.4);
-    transition: all .3s linear;
-  }
-  nav li:nth-child(1) a{
-    background: #2867B2;
-  }
-  nav li:nth-child(2) a{
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    transition: all 0.3s linear;
+}
+nav li:nth-child(1) a {
+    background: #2867b2;
+}
+nav li:nth-child(2) a {
     background: #333;
-  }
-  nav li:nth-child(3) a{
+}
+nav li:nth-child(3) a {
     background: #f75421;
-  }
-  
-  nav li a i{
-    position:absolute;
+}
+
+nav li a i {
+    position: absolute;
     top: 17px;
     left: 20px;
     font-size: 27px;
-  }
-  ul li a span{
+}
+ul li a span {
     display: none;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-  }
-  nav li a:hover {
-    z-index:1;
+}
+nav li a:hover {
+    z-index: 1;
     width: 200px;
-    border-bottom: 1px solid rgba(0,0,0,.5);
-    box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
-  }
-  ul li:hover a span{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+ul li:hover a span {
     padding-left: 30%;
     display: block;
-  }
-  /**/
+}
+/**/
 
 .socialIcons .fa-github:hover {
     color: #e1419e;
@@ -267,7 +267,7 @@ nav{
     z-index: 0;
     background: var(--body-back);
     background: linear-gradient(#9198e5, #e66465);
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     //   background-position: 0 -90px;
     display: flex;
     /* justify-content: space-between; */
@@ -496,10 +496,10 @@ nav{
     font-weight: 900;
     position: relative;
 }
-.pro-date{
+.pro-date {
     font-size: 20px;
 }
-.title{
+.title {
     text-decoration: underline;
 }
 .wrapper .center-line {
@@ -631,8 +631,8 @@ nav{
         margin: 10px 0;
     }
 }
-@media screen and (max-width: 1490px){
-    .Projects{
+@media screen and (max-width: 1490px) {
+    .Projects {
         display: none;
     }
 }
@@ -658,7 +658,7 @@ nav{
     background: var(--bg-contact-div);
     box-shadow: var(--shadow);
     display: flex;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -668,20 +668,20 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
     position: relative;
     margin: 10px 0;
 }
 
 #fname,
 #lname {
-    width: 90%;
+    width: 40%;
     font-size: 30px;
     border-radius: 3px;
     margin: auto;
     // margin-bottom: 2%;
     padding: 5px 15px;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     font-weight: 900;
 }
 
@@ -691,7 +691,7 @@ nav{
     font-size: 30px;
     border-radius: 3px;
     padding: 5px 15px;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     font-weight: 900;
 }
 
@@ -701,7 +701,7 @@ nav{
     font-size: 30px;
     border-radius: 3px;
     padding: 5px 15px;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     font-weight: 900;
 }
 
@@ -711,7 +711,7 @@ nav{
     font-size: 30px;
     border-radius: 3px;
     padding: 5px 15px;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     font-weight: 900;
 }
 
@@ -720,7 +720,7 @@ nav{
     font-size: 30px;
     border-radius: 26px;
     cursor: pointer;
-    font-family: 'Shadows Into Light';
+    font-family: "Shadows Into Light";
     font-weight: 900;
     border: none;
     background: linear-gradient(43deg, rgb(9, 121, 93) 0%, rgba(0, 212, 255, 1) 100%);
@@ -804,8 +804,7 @@ nav{
 /* *******************Media screen and  Queries****************** */
 
 @media screen and (max-width: 900px) {
-
-    body{
+    body {
         overflow: visible;
     }
     .navbar .mainMenu {
@@ -914,9 +913,19 @@ nav{
     }
     /*About*/
     /*Contact*/
-    .fname-lname{
+    .fname-lname {
         flex-direction: column;
     }
+    #fname,
+    #lname {
+        width: 80%;
+    }
+    #email,
+#number,
+#message,
+#cont-send{
+    width: 80%;
+}
     /*Contact*/
 }
 

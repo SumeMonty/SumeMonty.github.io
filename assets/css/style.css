@@ -137,7 +137,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.5s ease-in-out;
@@ -209,7 +209,7 @@ html {
 /**/
 nav {
   position: fixed;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   width: 50px;
   margin-top: 120px;
   -webkit-transition: all 0.3s linear;
@@ -231,12 +231,12 @@ nav li a {
   line-height: 60px;
   padding-left: 25%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 nav li:nth-child(1) a {
-  background: #2867B2;
+  background: #2867b2;
 }
 
 nav li:nth-child(2) a {
@@ -291,7 +291,7 @@ ul li:hover a span {
   background: var(--body-back);
   background: -webkit-gradient(linear, left top, left bottom, from(#9198e5), to(#e66465));
   background: linear-gradient(#9198e5, #e66465);
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,7 +783,7 @@ ul li:hover a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -810,12 +810,12 @@ ul li:hover a span {
 
 #fname,
 #lname {
-  width: 90%;
+  width: 40%;
   font-size: 30px;
   border-radius: 3px;
   margin: auto;
   padding: 5px 15px;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   font-weight: 900;
 }
 
@@ -825,7 +825,7 @@ ul li:hover a span {
   font-size: 30px;
   border-radius: 3px;
   padding: 5px 15px;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   font-weight: 900;
 }
 
@@ -835,7 +835,7 @@ ul li:hover a span {
   font-size: 30px;
   border-radius: 3px;
   padding: 5px 15px;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   font-weight: 900;
 }
 
@@ -845,7 +845,7 @@ ul li:hover a span {
   font-size: 30px;
   border-radius: 3px;
   padding: 5px 15px;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   font-weight: 900;
 }
 
@@ -854,7 +854,7 @@ ul li:hover a span {
   font-size: 30px;
   border-radius: 26px;
   cursor: pointer;
-  font-family: 'Shadows Into Light';
+  font-family: "Shadows Into Light";
   font-weight: 900;
   border: none;
   background: linear-gradient(43deg, #09795d 0%, #00d4ff 100%);
@@ -1090,6 +1090,16 @@ ul li:hover a span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #fname,
+  #lname {
+    width: 80%;
+  }
+  #email,
+  #number,
+  #message,
+  #cont-send {
+    width: 80%;
   }
   /*Contact*/
 }

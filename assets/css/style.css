@@ -211,6 +211,7 @@ nav {
   position: fixed;
   font-family: "Shadows Into Light";
   width: 50px;
+  z-index: 100;
   margin-top: 120px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -263,7 +264,7 @@ ul li a span {
 
 nav li a:hover {
   z-index: 1;
-  width: 200px;
+  width: 125px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -275,12 +276,16 @@ ul li:hover a span {
 }
 
 /**/
-.socialIcons .fa-github:hover {
-  color: #e1419e;
+.socialIcons .fa-github {
+  color: #494949;
 }
 
-.socialIcons .fa-linkedin:hover {
+.socialIcons .fa-linkedin {
   color: #2a57e0;
+}
+
+.socialIcons .fa-blogger {
+  color: #f75421;
 }
 
 /* *******************Home****************** */
@@ -999,12 +1004,6 @@ ul li:hover a span {
     display: inline-block;
     padding: 12px;
   }
-  .socialIcons .fa-github:hover {
-    color: #e1419e;
-  }
-  .socialIcons .fa-linkedin:hover {
-    color: #2a57e0;
-  }
   /*Home*/
   .Home {
     -webkit-box-pack: justify;
@@ -1144,6 +1143,12 @@ ul li:hover a span {
   }
   .img-responsive {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  nav {
+    display: none;
   }
 }
 

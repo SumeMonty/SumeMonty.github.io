@@ -33,7 +33,7 @@ if (window.matchMedia("(max-width:900px)").matches) {
 }
 
 if (window.matchMedia("(max-width:395px)").matches) {
-  document.querySelector('#nameH1').innerHTML = "Sumesh";
+  document.querySelector('#nameH1').innerHTML = 'Sumesh';
 }
 
 // Typed JS Animation Start
@@ -98,4 +98,3 @@ window.addEventListener('scroll', function () {
   }
 });
 // Toggle Switch
-

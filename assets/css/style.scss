@@ -727,7 +727,10 @@ ul li:hover a span {
     font-family: "Shadows Into Light";
     font-weight: 900;
 }
-
+.send-btn-div{
+    display: flex;
+    justify-content: center;
+}
 #cont-send {
     padding: 10px 30px;
     font-size: 30px;

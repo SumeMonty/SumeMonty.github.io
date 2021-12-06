@@ -872,6 +872,15 @@ ul li:hover a span {
   font-weight: 900;
 }
 
+.send-btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #cont-send {
   padding: 10px 30px;
   font-size: 30px;

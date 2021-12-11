@@ -262,19 +262,6 @@ ul li a span {
   text-transform: uppercase;
 }
 
-nav li a:hover {
-  z-index: 1;
-  width: 125px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-ul li:hover a span {
-  padding-left: 30%;
-  display: block;
-}
-
 /**/
 .socialIcons .fa-github {
   color: #494949;
@@ -297,6 +284,7 @@ ul li:hover a span {
   background: -webkit-gradient(linear, left top, left bottom, from(#9198e5), to(#e66465));
   background: linear-gradient(#9198e5, #e66465);
   font-family: "Shadows Into Light";
+  overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,6 +377,7 @@ ul li:hover a span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: visible;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -559,6 +548,7 @@ ul li:hover a span {
   width: 100%;
   padding: 90px 20px;
   z-index: 0;
+  overflow: visible;
   background: var(--projects-back);
 }
 
@@ -769,12 +759,13 @@ ul li:hover a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: visible;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-form-div {
@@ -801,8 +792,12 @@ ul li:hover a span {
           align-items: center;
 }
 
+.contact-form-div h1 {
+  font-size: 30px;
+}
+
 .form {
-  width: 70%;
+  width: 80%;
 }
 
 .contact-form {
@@ -835,8 +830,8 @@ ul li:hover a span {
 
 #contact-name {
   width: 100%;
-  font-size: 30px;
-  border-radius: 3px;
+  font-size: 25px;
+  border-radius: 26px;
   padding: 5px 15px;
   font-family: "Shadows Into Light";
   font-weight: 900;
@@ -845,8 +840,8 @@ ul li:hover a span {
 #contact-email {
   width: 100%;
   margin: 10px 0;
-  font-size: 30px;
-  border-radius: 3px;
+  font-size: 25px;
+  border-radius: 26px;
   padding: 5px 15px;
   font-family: "Shadows Into Light";
   font-weight: 900;
@@ -855,8 +850,8 @@ ul li:hover a span {
 #contact-subject {
   width: 100%;
   margin: 10px 0;
-  font-size: 30px;
-  border-radius: 3px;
+  font-size: 25px;
+  border-radius: 26px;
   padding: 5px 15px;
   font-family: "Shadows Into Light";
   font-weight: 900;
@@ -865,8 +860,8 @@ ul li:hover a span {
 #contact-message {
   width: 100%;
   margin: 10px 0;
-  font-size: 30px;
-  border-radius: 3px;
+  font-size: 25px;
+  border-radius: 26px;
   padding: 5px 15px;
   font-family: "Shadows Into Light";
   font-weight: 900;
@@ -883,9 +878,10 @@ ul li:hover a span {
 
 #cont-send {
   padding: 10px 30px;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 26px;
   cursor: pointer;
+  max-width: 105px;
   font-family: "Shadows Into Light";
   font-weight: 900;
   border: none;
@@ -1128,6 +1124,12 @@ ul li:hover a span {
     width: 80%;
   }
   /*Contact*/
+}
+
+@media screen and (max-height: 570px) {
+  #contact-subject {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 460px) {

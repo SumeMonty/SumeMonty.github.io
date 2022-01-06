@@ -4,9 +4,8 @@ $email = $_POST['contact-email'];
 $subject = $_POST['contact-subject'];
 $message = $_POST['contact-message'];
 
-$to="sumeshmohanty2020@gmail.com";
+$to="sumemonty@gmail.com";
 $body="From: $name \r\nEmail: $email\r\nMessage: $message";
 
 mail($to,$subject,$message);
-
 ?>

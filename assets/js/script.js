@@ -42,7 +42,7 @@ var typed = new Typed('.type', {
   strings: [
     'Mathematicaphile',
     'Web Developer',
-    'Programmer'
+    'Programming Student'
   ],
   typeSpeed: 50,
   backSpeed: 50,
